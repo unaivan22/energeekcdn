@@ -55,7 +55,7 @@ function DsdabmGalleryMasonry() {
   return (
     <div className="relative flex size-full flex-col items-center justify-center overflow-hidden rounded-lg py-2">
       <Marquee pauseOnHover className="[--duration:20s]">
-        <div className="columns-7 gap-3 space-y-3">
+        <div className="columns-4 gap-3 space-y-3">
           {randomizedMediaItems.map((item, index) => (
             <div key={index} className="break-inside-avoid cursor-pointer">
               {item.type === 'image' && (

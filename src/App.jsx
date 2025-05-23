@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Link } from 'react-router-dom'
 import './App.css'
 import {
   Table,
@@ -39,7 +37,9 @@ function App() {
                 <TableRow key={link.desc}>
                   <TableCell>{link.desc}</TableCell>
                   <TableCell>
-                    <a href={link.url} /> {link.url}
+                    <Link to={link.url} className="text-blue-600 underline">
+                      {window.location.origin}/#${link.url}
+                    </Link>
                   </TableCell>
                 </TableRow>
               ))}
